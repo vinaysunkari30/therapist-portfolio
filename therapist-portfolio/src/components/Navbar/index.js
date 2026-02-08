@@ -80,6 +80,9 @@ const Navbar = () => {
     }
 
     window.history.pushState(null, "", `#${targetId}`);
+    setTimeout(() => {
+    isClickingLink.current = false;
+  }, 1500);
   };
 
   useEffect(() => {
