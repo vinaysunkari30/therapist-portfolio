@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("Home");
   const isClickingLink = useRef(false);
-  
+
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -68,11 +68,11 @@ const Navbar = () => {
 
   const handleLinkClick = (id, tabName) => {
     const targetId = id.toLowerCase();
+    isClickingLink.current = true;
+
     setActiveTab(tabName);
     setIsOpen(false);
     setIsVisible(true);
-
-    isClickingLink.current = true;
 
     const element = document.getElementById(targetId);
     if (element) {
@@ -80,9 +80,16 @@ const Navbar = () => {
     }
 
     window.history.pushState(null, "", `#${targetId}`);
-    setTimeout(() => {
-    isClickingLink.current = false;
-  }, 1500);
+    const unlockOnManualScroll = () => {
+      isClickingLink.current = false;
+      window.removeEventListener("wheel", unlockOnManualScroll);
+      window.removeEventListener("touchmove", unlockOnManualScroll);
+    };
+
+    window.addEventListener("wheel", unlockOnManualScroll, { passive: true });
+    window.addEventListener("touchmove", unlockOnManualScroll, {
+      passive: true,
+    });
   };
 
   useEffect(() => {
