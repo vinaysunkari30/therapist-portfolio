@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Mona+Sans:wght@200..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  
+  /* colors */
+  --color-primary: #241d38;   
+  --color-secondary: #F7F3F0; 
+  --color-subHeading: #25174d;   
+  --color-body: #210d3b; 
+  --color-about:#F2EDE4;
+  --color-services:#D1D9CF;
+  --color-office:#E2E2E8;
+  --color-Faqs:#E6E9EF;
+
+  /* Fonts */
+  --font-heading: "Lora", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-xxs: 20rem;    /* 320px  */
+  --breakpoint-xs: 30rem;     /* 480px  */
+  --breakpoint-sm: 40rem;     /* 640px  */
+  --breakpoint-md: 48rem;     /* 768px  */
+  --breakpoint-lg: 64rem;     /* 1024px */
+  --breakpoint-xl: 90rem;     /* 1440px */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0px;
+  scrollbar-gutter: stable;
+}
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 0px;
+  }
+}
+
+:root {
+  --font-sans: "Mona Sans", system-ui, sans-serif;
+  --font-heading: "Syne", system-ui, sans-serif;
+}
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
