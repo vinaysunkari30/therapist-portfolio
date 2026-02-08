@@ -14,11 +14,11 @@ const About = () => {
               alt="Dr. Maya Reynolds Profile"
             />
           </div>
-          <div className="flex flex-col justify-center items-center text-center  w-full sm:items-start sm:text-left">
+          <div className="flex flex-col justify-center items-center text-center w-full sm:items-start sm:text-left">
             <div className="w-full max-w-lg mb-3 mt-6 sm:max-w-none md:mt-10">
               <div className="overflow-auto h-38 xs:px-5 md:px-0 md:h-50">
-                <p className="font-body text-body text-justify text-[15px] leading-relaxed xs:text-[17px] sm:text-left sm:text-[20px] md:text-lg xl:text-[21px]">
-                  <span className="text-primary underline font-semibold text-lg sm:text-[20px] md:text-xl md:font-bold xl:text-[28px] sm:inline mb-1">
+                <p className="font-body text-body text-[15px] leading-relaxed xs:text-[17px] sm:text-left sm:text-[17px] md:text-lg xl:text-[21px]">
+                  <span className="text-primary underline font-semibold text-lg sm:text-[18px] md:text-xl md:font-bold xl:text-[28px] sm:inline mb-1">
                     Dr. Maya Reynolds
                   </span>{" "}
                   is a dedicated clinical psychologist with over a decade of

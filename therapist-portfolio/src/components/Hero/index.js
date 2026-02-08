@@ -27,8 +27,8 @@ const Hero = () => {
                 Therapy for Anxiety, Trauma & Burnout in Santa Monica, CA.
               </p>
             </div>
-            <div className="animate-heading w-full flex justify-center items-center xl:flex xl:justify-center xl:w-120">
-              <button className="border border-primary cursor-pointer text-primary flex items-center gap-3 text-xl font-body font-bold hover:bg-primary hover:text-white transition-all duration-800 px-5 py-4 sm:text-md sm:py-2 sm:px-4 sm:gap-0.6 md:text-xl md:py-4 lg:mr-22 xl:mr-0 lg:w-75 lg:gap-3 xl:text-[25px] xl:font-semibold xl:w-88">
+            <div className="animate-heading w-full flex justify-center items-center xl:flex xl:justify-center lg:w-100 xl:w-120">
+              <button className="border border-primary cursor-pointer text-primary flex items-center gap-3 text-xl font-body font-bold hover:bg-primary hover:text-white transition-all duration-800 px-5 py-4 sm:text-md sm:py-2 sm:px-4 sm:gap-0.6 md:text-xl md:py-4 xl:mr-0 lg:w-75 lg:ml-6 lg:gap-3 xl:text-[25px] xl:font-semibold xl:w-88">
                 Schedule Your Session{" "}
                 <HiArrowLongRight className="text-4xl sm:text-[35px] md:text-2xl lg:text-3xl xl:text-[31px]" />
               </button>
