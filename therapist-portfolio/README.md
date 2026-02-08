@@ -16,7 +16,7 @@ Custom layouts using grid-cols-1 for mobile and md:grid-cols-2 for desktop.Luxur
 Modern Typography: Clean headings and body text optimized for readability.Performance: Optimized images and fast page loads via Next.js.
 
 1. Clone the repository:
-  git clone https://github.com/your-username/therapist-portfolio.git
+  git clone git clone [https://github.com/vinaysunkari30/therapist-portfolio.git](https://github.com/vinaysunkari30/therapist-portfolio.git)
   cd therapist-portfolio
 
 2. Install dependencies
